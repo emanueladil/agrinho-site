@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Festejando a Conexão no Campo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    .titulo-principal {
+      font-family: 'Dancing Script', cursive;
+      font-weight: 700;
+      font-size: 3rem;
+    }
+    /* Estilo do botão jogar */
+    .botao-jogar {
+      display: inline-block;
+      background-color: #28a745; /* verde */
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: bold;
+      font-size: 1.2rem;
+      padding: 12px 28px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      margin-top: 15px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+      transition: background-color 0.3s ease;
+    }
+    .botao-jogar:hover {
+      background-color: #218838;
+    }
+    /* Estilo para imagem evento nova */
+    #eventos img.evento-imagem {
+      margin-top: 20px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="titulo-principal">Festejando a Conexão no Campo</h1>
+    <p>Unindo pessoas, tradições e tecnologia do campo à cidade.</p>
+    <nav>
+      <a href="#historias">Histórias</a> |
+      <a href="#eventos">Eventos</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="historias">
+      <h2>Histórias do Campo</h2>
+      <p>O campo sempre foi o berço da produção de alimentos e do cuidado com a natureza. É onde a terra é cultivada com amor por famílias que vivem da agricultura, mantendo vivas tradições e saberes passados de geração em geração.</p>
+      <p>Com o tempo, a tecnologia e a educação aproximaram o campo da cidade. Hoje, não existe mais separação: o que é produzido no campo alimenta e sustenta a cidade, enquanto a cidade compartilha inovação, comunicação e oportunidades.</p>
+      <p>Festejar essa conexão é valorizar o que une esses dois mundos: o respeito pelo trabalho rural, o uso consciente dos recursos, a cultura local e a cooperação entre todos. O futuro é mais forte quando campo e cidade caminham juntos!</p>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStCbW-Qe8rctm4KlMigq4YNRCLrbyD_tUmEQ&s" alt="Imagem do campo celebrando a conexão com a cidade" />
+    </section>
+
+    <section id="eventos">
+      <h2>Eventos de Conexão</h2>
+      <ul>
+        <li>Feira da Agricultura Familiar</li>
+        <li>Festival Gastronômico Rural</li>
+        <li>Oficinas de Cultura do Campo</li>
+      </ul>
+
+      <!-- IMAGEM DO EVENTO -->
+      <img
+        src="https://www.car.ba.gov.br/sites/default/files/2022-02/WhatsApp%20Image%202022-02-18%20at%2010.11.51.jpeg"
+        alt="Imagem do Evento Agrinho"
+        class="evento-imagem"
+      />
+
+      <!-- BOTÃO JOGAR -->
+      <a
+        href="https://wordwall.net/pt/resource/15820995/charadas-um-dia-no-campo"
+        target="_blank"
+        class="botao-jogar"
+        >JOGAR AGORA</a
+      >
+    </section>
+  </main>
+
+  <footer>
+    <p>Site criado por Emanuel Adilson Ferreira da Silva - Projeto Agrinho 2025</p>
+    <button onclick="document.body.classList.toggle('alto-contraste')">Modo Alto Contraste</button>
+    <button onclick="aumentarFonte()">Aumentar Fonte</button>
+  </footer>
+
+  <script>
+    function aumentarFonte() {
+      document.body.style.fontSize = 'larger';
+    }
+  </script>
+</body>
+</html>
